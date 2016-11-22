@@ -12,7 +12,7 @@ export default class Weekdays extends Component {
     for(var i = 0; i < 7; i++) {
       let day = Moment().add(i, 'days').format('dddd');
       daysItems.push(
-        <DayItem day={day} daysUntil={i} />
+        <DayItem day={day} daysUntil={i} key={i}/>
       )
     }
     return daysItems

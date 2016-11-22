@@ -5,22 +5,22 @@ import { Text, StyleSheet } from 'react-native';
 // Create our Component
 export default class DayItem extends Component {
   color() {
-    let opacity = 1 / this.props.daysUntil
-    return 'rgba(0, 0, 0, '+ opacity +' )'
+    // let opacity = 1 / this.props.daysUntil
+    return 'rgb(0, 0, 0)'
   }
-  fontWeight() {
-    return ( 7 - this.props.daysUntil) * 100;
-  }
+  // fontWeight() {
+  //   return ( 7 - this.props.daysUntil) * 100
+  // }
   fontSize() {
     return 60 - 6 * this.props.daysUntil
   }
   lineHeight() {
-    return 70 - 4 * this.props.daysUntil;
+    return 70 - 4 * this.props.daysUntil
   }
   style() {
     return {
       color: this.color(),
-      fontWeight: this.fontWeight(),
+      // fontWeight: this.fontWeight(),
       fontSize: this.fontSize(),
       lineHeight: this.lineHeight()
     }
